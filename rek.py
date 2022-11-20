@@ -36,43 +36,19 @@ def draw_text_on_img(image_path):
     drawer = ImageDraw.Draw(image)
     drawer.text((50, 100), get_text_from_image(image_path), font=font, fill='black')
     image.show()
+    
+    
+    
+    
+# import lzma
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import bz2
-import os
-
-print(os.path.getsize("1.png"))
-with open('1.png', 'rb') as f:
-    data = f.read()
-    compress = bz2.compress(data, compresslevel=9)
-    print(os.path.getsize(compress))
-
-
-
-#
-# print(os.path.getsize("1.png"))
-# # print(os.path.getsize("1.png"))
-# # bz2.compress("1.png", compresslevel=9)
-# # print(os.path.getsize("1.png"))
-
-
-import lzma
-
-img = '1.png'
-# закодируем данные в байты
-data = img.encode('utf-8')
-# сжимаем
-compress = lzma.compress(data)
+# img = '1.png'
+# # закодируем данные в байты
+# data = img.encode('utf-8')
+# # сжимаем
+# compress = lzma.compress(data)
+# data = img.encode('utf-8')
+# compress = lzma.compress(data)
+# lzma.decompress(data, format=FORMAT_AUTO, \
+#                     memlimit=None, filters=None)
+# Для кодировки и обратно
