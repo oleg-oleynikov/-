@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 import pytesseract
 import os
 
-pytesseract.pytesseract.tesseract_cmd = r'F:\Tesseract\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'Путь к tesseract.exe'
 
 def get_img(width, height):
     image = Image.new(mode='RGB', size=(width, height), color=(255, 255, 255))
